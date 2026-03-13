@@ -1,9 +1,9 @@
-public class Reader {
+public class Reader_ {
     
     private String element;
-    private Converter converter;
+    private Converter_ converter;
 
-    public Reader(String element, Converter converter){
+    public Reader_(String element, Converter_ converter){
         this.element = element;
         this.converter = converter;
     }

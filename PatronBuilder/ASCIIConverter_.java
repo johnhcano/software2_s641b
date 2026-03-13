@@ -1,6 +1,6 @@
-public class ASCIIConverter extends Converter{
+public class ASCIIConverter_ extends Converter_{
     
-    public ASCIIConverter(String document){
+    public ASCIIConverter_(String document){
         super(document);
     }
 

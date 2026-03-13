@@ -1,16 +1,16 @@
 public class EjecutarBuilder {
     public static void main(String[] args) {
         
-        Converter objASCII = new ASCIIConverter("ASCII");
-        Converter objPostScript = new PostScriptConverter("PostScript");
-        Converter objPDF = new PDFConverter("PDF");
+        Converter_ objASCII = new ASCIIConverter_("ASCII");
+        Converter_ objPostScript = new PostScriptConverter_("PostScript");
+        Converter_ objPDF = new PDFConverter_("PDF");
 
-        Reader objLector1 = new Reader("LINE", objASCII);
-        Reader objLector2 = new Reader("TABLE", objASCII);
-        Reader objLector3 = new Reader("LINE", objPDF);
-        Reader objLector4 = new Reader("LINE", objPostScript);
-        Reader objLector5 = new Reader("PARAGRAPH", objASCII);
-        Reader objLector6 = new Reader("TABLE", objPDF);
+        Reader_ objLector1 = new Reader_("LINE", objASCII);
+        Reader_ objLector2 = new Reader_("TABLE", objASCII);
+        Reader_ objLector3 = new Reader_("LINE", objPDF);
+        Reader_ objLector4 = new Reader_("LINE", objPostScript);
+        Reader_ objLector5 = new Reader_("PARAGRAPH", objASCII);
+        Reader_ objLector6 = new Reader_("TABLE", objPDF);
          
         objLector1.parseInput(); //Line -> ASCII
         objLector2.parseInput(); //Table -> ASCII
